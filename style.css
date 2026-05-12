@@ -2086,9 +2086,18 @@
    Q&A 頁 (qa-*) — Editorial Refined
    ============================================ */
 .slidev-layout.qa-slide {
+  --qa-bg: #eee9e1;
+  --qa-surface: #f8f5ef;
+  --qa-text: #3e3935;
+  --qa-muted: #776f69;
+  --qa-blue: #7f9098;
+  --qa-rose: #b79a8e;
+  --qa-border: rgba(62, 57, 53, 0.14);
   background:
-    radial-gradient(ellipse 70% 55% at 50% 48%, rgba(255, 255, 255, 0.55) 0%, transparent 75%),
-    var(--m-bg);
+    radial-gradient(ellipse 72% 56% at 50% 48%, rgba(248, 245, 239, 0.72) 0%, transparent 76%),
+    linear-gradient(135deg, rgba(127, 144, 152, 0.16) 0%, transparent 34%),
+    radial-gradient(circle at 82% 22%, rgba(183, 154, 142, 0.24) 0%, transparent 28%),
+    var(--qa-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2114,17 +2123,17 @@
 }
 
 .qa-marker-line {
-  width: 42px;
+  width: 48px;
   height: 1px;
-  background: var(--m-border);
+  background: var(--qa-border);
   display: inline-block;
 }
 
 .qa-marker-label {
   font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.4em;
-  color: var(--m-muted);
+  font-weight: 700;
+  letter-spacing: 0.34em;
+  color: var(--qa-blue);
   text-transform: uppercase;
 }
 
@@ -2137,10 +2146,10 @@
 }
 
 .qa-title {
-  font-size: 7.5rem;
-  font-weight: 700;
-  color: var(--m-blue);
-  letter-spacing: -0.025em;
+  font-size: 7.2rem;
+  font-weight: 750;
+  color: var(--qa-text);
+  letter-spacing: 0;
   line-height: 0.95;
   margin: 0;
   display: inline-flex;
@@ -2153,8 +2162,17 @@
   font-size: 0.95em;
   font-weight: 400;
   font-style: italic;
-  color: var(--m-warm);
+  color: var(--qa-rose);
   transform: translateY(-0.03em);
+}
+
+.qa-prompt {
+  max-width: 560px;
+  color: var(--qa-muted);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
 }
 
 /* Ornament: three dots, middle warm */
@@ -2162,20 +2180,35 @@
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  margin: 2.8rem 0 1.8rem;
+  margin: 2.35rem 0 1.1rem;
 }
 
 .qa-ornament-dot {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--m-border);
+  background: var(--qa-border);
 }
 
 .qa-ornament-dot-mid {
-  background: var(--m-warm);
+  background: var(--qa-rose);
   width: 5px;
   height: 5px;
+}
+
+.qa-next-cue {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--qa-border);
+  border-radius: 999px;
+  background: rgba(248, 245, 239, 0.66);
+  color: var(--qa-blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 /* Foot meta */
@@ -2184,12 +2217,12 @@
   align-items: center;
   gap: 0.55rem;
   font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  color: var(--m-muted);
+  letter-spacing: 0.14em;
+  color: var(--qa-muted);
 }
 
 .qa-foot-name {
-  color: var(--m-text);
+  color: var(--qa-text);
   font-weight: 600;
 }
 

@@ -938,6 +938,7 @@ class: qa-slide
 
   <div class="qa-title-block">
     <h1 class="qa-title">Q<span class="qa-amp">&amp;</span>A</h1>
+    <div class="qa-prompt">問方向、問流程、問踩雷案例都可以</div>
   </div>
 
   <div class="qa-ornament">
@@ -945,6 +946,8 @@ class: qa-slide
     <span class="qa-ornament-dot qa-ornament-dot-mid"></span>
     <span class="qa-ornament-dot"></span>
   </div>
+
+  <div class="qa-next-cue">Next · Scan slides</div>
 
   <div class="qa-foot">
     <span class="qa-foot-name">Vincent Yu</span>

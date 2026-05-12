@@ -104,7 +104,7 @@
 .easter-gif {
   position: absolute;
   top: -38px;
-  right: -10px;
+  right: 6px;
   width: 52px;
   pointer-events: none;
 }

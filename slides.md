@@ -16,7 +16,7 @@ class: cover-slide
 
 <div class="cover-overlay">
   <div class="cover-title-block">
-    <div class="cover-main-title">AI 輔助開發流程實<span class="title-easter">戰<img src="/clawd.gif" class="easter-gif" /></span></div>
+    <div class="cover-main-title">AI 輔助開發流程實<span class="title-easter">戰<img src="/clawd_1.gif" class="easter-gif" /></span></div>
     <div class="cover-sub-title">Ticket → PR 全流程 + 大改版策略</div>
     <div class="cover-divider" />
   </div>

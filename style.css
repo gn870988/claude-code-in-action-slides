@@ -1640,6 +1640,97 @@
   background: #000;
 }
 
+.demo-video-shell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: calc(100% - 3.2rem);
+}
+
+.demo-video-shell > .demo-video {
+  max-height: 100%;
+}
+
+.demo-video-expand {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  padding: 0.32rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.76);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.16s ease, background 0.16s ease;
+}
+
+.demo-video-shell:hover .demo-video-expand,
+.demo-video-expand:focus-visible {
+  opacity: 1;
+}
+
+.demo-video-expand:hover,
+.demo-video-expand:focus-visible {
+  background: rgba(15, 23, 42, 0.92);
+}
+
+.demo-video-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1.25rem;
+  background: #000;
+}
+
+.demo-video-overlay-player {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+  outline: none;
+  background: #000;
+}
+
+.demo-video-overlay-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 1;
+  padding: 0.32rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.76);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.16s ease, background 0.16s ease;
+}
+
+.demo-video-overlay:hover .demo-video-overlay-close,
+.demo-video-overlay-close:focus-visible {
+  opacity: 1;
+}
+
+.demo-video-overlay-close:hover,
+.demo-video-overlay-close:focus-visible {
+  background: rgba(15, 23, 42, 0.92);
+}
+
 .demo-video-iframe {
   width: 100%;
   aspect-ratio: 16 / 9;

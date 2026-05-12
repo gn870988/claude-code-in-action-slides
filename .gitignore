@@ -1,0 +1,42 @@
+node_modules
+.DS_Store
+dist
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Slidev / 工具暫存
+.slide-audit/
+.slidev-preview.pid
+*.pid
+
+# ============================================
+# Demo videos — 雲端部署不帶影片，靠 SmartVideo 自動 fallback 到 YouTube
+# 本地檔案保留以便離線排練；推到 git 的版本不含 mp4
+# ============================================
+public/demo-a-1-plan-coding-commit.mp4
+public/demo-a-2-pr.mp4
+public/demo-a-3-review.mp4
+public/demo-b-context-pack.mp4

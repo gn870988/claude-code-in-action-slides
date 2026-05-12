@@ -961,8 +961,23 @@ class: ending-slide-new
 <!-- 末頁 -->
 
 <div class="ending-new-wrap">
-  <div class="ending-new-title">Thank You.</div>
-  <div class="ending-new-divider" />
-  <div class="ending-new-author">Vincent Yu</div>
-  <div class="ending-new-dept">ACL_COE_MyA&amp;PRM · 2026</div>
+  <div class="ending-new-copy">
+    <div class="ending-new-kicker">Slides are available online</div>
+    <div class="ending-new-title">Thank You.</div>
+    <div class="ending-new-divider" />
+    <div class="ending-new-subtitle">AI 輔助開發流程實戰</div>
+    <div class="ending-new-url">gn870988.github.io/claude-code-in-action-slides</div>
+    <div class="ending-new-meta">
+      <span>Vincent Yu</span>
+      <span>ACL_COE_MyA&amp;PRM</span>
+      <span>2026</span>
+    </div>
+  </div>
+
+  <div class="ending-new-qr-card">
+    <div class="ending-new-qr-frame">
+      <img src="/slides-qrcode.svg" class="ending-new-qr" alt="Slides QR code" />
+    </div>
+    <div class="ending-new-qr-label">Scan for slides</div>
+  </div>
 </div>

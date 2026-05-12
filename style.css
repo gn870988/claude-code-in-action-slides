@@ -1450,53 +1450,146 @@
 }
 
 /* ============================================
-   末頁 Thank You（深色現代版）
+   末頁 Thank You（Morandi QR 版）
    ============================================ */
 .slidev-layout.ending-slide-new {
-  background: #2f2926;
+  --ending-bg: #eee9e1;
+  --ending-surface: #f8f5ef;
+  --ending-text: #3e3935;
+  --ending-muted: #776f69;
+  --ending-blue: #7f9098;
+  --ending-rose: #b79a8e;
+  --ending-border: rgba(62, 57, 53, 0.14);
+  background:
+    linear-gradient(135deg, rgba(127, 144, 152, 0.2) 0%, transparent 34%),
+    radial-gradient(circle at 82% 22%, rgba(183, 154, 142, 0.28) 0%, transparent 28%),
+    var(--ending-bg);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 4rem 5rem;
 }
 
 .ending-new-wrap {
-  text-align: center;
+  width: min(100%, 980px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.ending-new-copy {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
+  align-items: flex-start;
 }
 
 .ending-new-title {
-  font-size: 5.5rem;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.02em;
+  font-size: 5.15rem;
+  font-weight: 750;
+  color: var(--ending-text);
+  letter-spacing: 0;
   line-height: 1;
-  margin-bottom: 0.6rem;
+  margin: 0 0 1rem;
+}
+
+.ending-new-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: var(--ending-blue);
+  text-transform: uppercase;
+  margin-bottom: 1.45rem;
 }
 
 .ending-new-divider {
-  width: 48px;
+  width: 68px;
   height: 2px;
-  background: var(--m-warm);
+  background: var(--ending-rose);
   border-radius: 2px;
-  margin-bottom: 0.8rem;
-  opacity: 0.7;
+  margin-bottom: 1.35rem;
 }
 
-.ending-new-author {
-  font-size: 1rem;
+.ending-new-subtitle {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ending-text);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+.ending-new-url {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0.48rem 0.7rem;
+  border: 1px solid var(--ending-border);
+  border-radius: 6px;
+  background: rgba(248, 245, 239, 0.58);
+  color: var(--ending-muted);
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  word-break: break-word;
+  margin-bottom: 2.45rem;
+}
+
+.ending-new-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--ending-muted);
+  font-size: 0.78rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.65);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.ending-new-dept {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.35);
-  letter-spacing: 0.06em;
+.ending-new-meta span + span::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+  background: var(--ending-rose);
+  vertical-align: middle;
+}
+
+.ending-new-qr-card {
+  width: 300px;
+  padding: 1.25rem 1.25rem 1.05rem;
+  border: 1px solid var(--ending-border);
+  border-radius: 8px;
+  background: rgba(248, 245, 239, 0.82);
+  box-shadow: 0 24px 56px rgba(62, 57, 53, 0.09);
+}
+
+.ending-new-qr-frame {
+  aspect-ratio: 1;
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 6px;
+  background: var(--ending-surface);
+  border: 1px solid rgba(62, 57, 53, 0.1);
+}
+
+.ending-new-qr {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ending-new-qr-label {
+  margin-top: 0.95rem;
+  text-align: center;
+  color: var(--ending-blue);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 /* ============================================

@@ -430,31 +430,6 @@
   letter-spacing: 0.01em;
 }
 
-/* 底部 pill 標籤 */
-.hook-pills {
-  display: flex;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-  border-top: 1px dashed var(--m-border);
-}
-
-.hook-pill {
-  font-size: 0.85rem;
-  color: var(--m-muted);
-  padding: 0.35rem 0.85rem;
-  background: var(--m-bg);
-  border-radius: 20px;
-  border: 1px solid var(--m-border);
-}
-
-.hook-pill.accent {
-  color: var(--m-blue);
-  font-weight: 600;
-  background: #edf0f3;
-  border-color: var(--m-teal);
-}
-
 /* ============================================
    分享目標頁 statement items
    ============================================ */

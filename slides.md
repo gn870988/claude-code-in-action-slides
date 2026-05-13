@@ -149,12 +149,6 @@ class: content-slide hook-slide
   </div>
 </div>
 
-<div class="hook-pills">
-  <div class="hook-pill">AI 沒有你的 codebase context</div>
-  <div class="hook-pill">不知道你的 Ticket 要求</div>
-  <div class="hook-pill accent">今天要改變這件事 →</div>
-</div>
-
 ---
 layout: default
 class: content-slide hook-slide
